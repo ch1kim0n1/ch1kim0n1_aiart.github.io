@@ -1,5 +1,13 @@
+TODO:
 - Add day 8
 - Update design
 - make appropriate logo location and add descriptions of each prompt for each day
 - add animations
 - add more functions
+
+Update 11/21/23:
+Working on features
+added github
+added minor animations
+Changed design
+images are now clickable
