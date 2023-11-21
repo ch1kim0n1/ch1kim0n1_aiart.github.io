@@ -1,0 +1,5 @@
+- Add day 8
+- Update design
+- make appropriate logo location and add descriptions of each prompt for each day
+- add animations
+- add more functions

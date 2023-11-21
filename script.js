@@ -41,7 +41,13 @@ const days = [
     label: "Day 7",
     page: "https://anilist.co/activity/649128166",
     img: "images/AI/day7.jpg"
-    }
+    },
+    {
+    day: 8,
+    label: "Day 8",
+    page: "https://anilist.co/activity/649743957",
+    img: "images/AI/day8.jpg"
+    },
   ];
   
   // Get the days container
