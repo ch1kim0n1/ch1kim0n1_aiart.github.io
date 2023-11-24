@@ -51,11 +51,29 @@ const days = [
     img: "images/AI/day8.jpg"
     },
     {
-      day: 9,
-      label: "Day 9",
-      page: base + "649983390",
-      img: "images/AI/day9.jpg"
-      },
+    day: 9,
+    label: "Day 9",
+    page: base + "649983390",
+    img: "images/AI/day9.jpg"
+    },
+    {
+    day: 10,
+    label: "Day 10",
+    page: base + "650447277",
+    img: "images/AI/day10.jpg"
+    },
+    {
+    day: 11,
+    label: "Day 11",
+    page: base + "651158001",
+    img: "images/AI/day11.jpg"
+    },
+    {
+    day: 12,
+    label: "Day 12",
+    page: base + "651158610",
+    img: "images/AI/day12.jpg"
+    },
   ];
   
  // Get days container 

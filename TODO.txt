@@ -6,8 +6,9 @@ TODO:
 - add more functions
 
 Update 11/21/23:
-Working on features
 added github
 added minor animations
-Changed design
+added icon
+New design
 images are now clickable
+Working on features
