@@ -19,34 +19,45 @@ const days = [
 ];
 
 const daysContainer = document.querySelector('.days');
-
-days.forEach(day => {
-  const column = document.createElement('div');
-  column.classList.add('day');
-
-  const img = document.createElement('img');
-  img.src = day.img;
-
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
-
-  const title = document.createElement('h3');
-  title.textContent = day.label;
-  title.classList.add('custom-title');
-
-  column.appendChild(img);
-  overlay.appendChild(title);
-  column.appendChild(overlay);
-
-  daysContainer.appendChild(column);
-
-  img.addEventListener("click", () => {
-    window.location.href = day.page;
-  });
-});
-
 const moreBtn = document.querySelector(".more-btn");
+let loadedImages = 0;
 
-moreBtn.addEventListener("click", () => {
-  console.log("Show more");
-});
+function loadMoreImages() {
+  const nextImages = days.slice(loadedImages, loadedImages + 6);
+
+  nextImages.forEach(day => {
+    const column = document.createElement('div');
+    column.classList.add('day', 'animated-day');
+
+    const img = document.createElement('img');
+    img.src = day.img;
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    const title = document.createElement('h3');
+    title.textContent = day.label;
+    title.classList.add('custom-title');
+
+    column.appendChild(img);
+    overlay.appendChild(title);
+    column.appendChild(overlay);
+
+    daysContainer.appendChild(column);
+
+    img.addEventListener("click", () => {
+      window.location.href = day.page;
+    });
+  });
+
+  loadedImages += 6;
+
+  if (loadedImages >= days.length) {
+    moreBtn.style.display = 'none';
+  }
+}
+
+moreBtn.addEventListener("click", loadMoreImages);
+
+// Load initial images
+loadMoreImages();

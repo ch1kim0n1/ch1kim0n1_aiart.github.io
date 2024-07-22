@@ -1,19 +1,20 @@
 :root {
-  --main-color: #ec95ff; 
-  --secondary-color: #ff69b4;
+  --main-color: #ff99cc; /* Light pink */
+  --secondary-color: #66ccff; /* Light blue */
+  --background-color: #fffaf0; /* Ivory */
+  --text-color: #333333; /* Dark gray */
 }
 
 body {
-  background-image: url('images/bubbles.png');
-  background-size: contain;
+  background-color: var(--background-color);
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(205, 205, 205);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 
 .header {
   background: var(--main-color);
-  color: #fff;
+  color: #ffffff; /* White */
   padding: 20px 0;
   position: relative;
   overflow: hidden;
@@ -81,7 +82,7 @@ body {
 }
 
 .social a {
-  color: #fff;
+  color: #ffffff; /* White */
   margin-left: 25px;
   font-size: 20px;
 }
@@ -102,7 +103,7 @@ body {
 .day img {
   max-width: 50%;
   height: auto;
-  border-radius: 60%;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -120,7 +121,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #ffffff; /* White */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
@@ -132,7 +133,7 @@ body {
 
 .more-btn {
   background: var(--secondary-color);
-  color: white;
+  color: #ffffff; /* White */
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
@@ -143,7 +144,7 @@ body {
 }
 
 .more-btn:hover {
-  background: darken(var(--secondary-color), 10%);
+  background: #5bb0e6; /* Slightly darker light blue */
 }
 
 .custom-title {
@@ -155,7 +156,7 @@ footer {
   padding: 30px;
   opacity: 0.8;
   background: var(--main-color);
-  color: white;
+  color: #ffffff; /* White */
 }
 
 footer p {
